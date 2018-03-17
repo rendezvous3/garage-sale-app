@@ -37,10 +37,13 @@ gulp.task('style', ['css', 'copy-fonts'], function(){})
 gulp.task('js', function(){
     return gulp.src(
             [
-                './public/js/jquery.js',
-                './public/js/plugins.js',
-                './public/js/functions.js',
-                './public/js/custom.js'
+                './public/js/jquery-1.10.2.js',
+                './public/js/bootstrap.min.jss',
+                './public/js/bootstrap-checkbox-radio.js',
+                './public/js/chartist.min.js',
+                './public/js/bootstrap-notify.js',
+                './public/js/paper-dashboard.js',
+                './public/js/demo.js',
             ]
         )
         .pipe(gp_concat('vendor.min.js'))
